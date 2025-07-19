@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+TestResults/
+*.log
+
+# Angular
+node_modules/
+dist/
+.env
+
+# Git
+.git/
+
+# Outros
+*.db
+*.DS_Store
+Thumbs.db
