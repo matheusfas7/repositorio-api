@@ -8,7 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.19" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RepositorioApi.Application\RepositorioApi.Application.csproj" />
+    <ProjectReference Include="..\RepositorioApi.Domain\RepositorioApi.Domain.csproj" />
+    <ProjectReference Include="..\RepositorioApi.Infrastructure\RepositorioApi.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

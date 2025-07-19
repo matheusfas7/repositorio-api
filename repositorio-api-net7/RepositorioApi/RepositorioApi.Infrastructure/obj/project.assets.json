@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "RepositorioApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/RepositorioApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositorioApi.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RepositorioApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RepositorioApi.Domain/RepositorioApi.Domain.csproj",
+      "msbuildProject": "../RepositorioApi.Domain/RepositorioApi.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "RepositorioApi.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\mathe\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Domain\\RepositorioApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Domain\\RepositorioApi.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
