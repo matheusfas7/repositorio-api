@@ -4,6 +4,6 @@ namespace RepositorioApi.Domain.Interfaces
 {
     public interface IGitHubService
     {
-        Task<List<Repositorio>> BuscarRepositoriosComRelevancia(string termo);
+        Task<List<Repositorio>> BuscarRepositoriosPorNome(string nome);
     }
 }

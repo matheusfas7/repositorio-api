@@ -14,9 +14,9 @@ namespace RepositorioApi.Infrastructure.ExternalServices
             _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("request");
         }
 
-        public async Task<List<Repositorio>> BuscarRepositoriosComRelevancia(string termo)
+        public async Task<List<Repositorio>> BuscarRepositoriosPorNome(string nome)
         {
-            var url = $"https://api.github.com/search/repositories?q={termo}";
+            var url = $"https://api.github.com/search/repositories?q={nome}";
 
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();

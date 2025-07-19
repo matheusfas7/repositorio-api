@@ -9,6 +9,6 @@ namespace RepositorioApi.Application.Interfaces
 {
     public interface IRepositorioService
     {
-        Task<List<RepositorioDTO>> BuscarRepositoriosComRelevancia(string termo);
+        Task<List<RepositorioDTO>> BuscarRepositoriosPorNome(string nome);
     }
 }

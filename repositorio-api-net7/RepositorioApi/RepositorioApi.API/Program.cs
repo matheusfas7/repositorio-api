@@ -6,10 +6,13 @@ using RepositorioApi.Domain.Repositories;
 using RepositorioApi.Infrastructure.ExternalServices;
 using StackExchange.Redis;
 using System.Text.Json;
+using RepositorioApi.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCustomServices();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddStackExchangeRedisCache(options =>
@@ -18,8 +21,6 @@ builder.Services.AddStackExchangeRedisCache(options =>
 });
 
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IRepositorioService, RepositorioService>();
-builder.Services.AddHttpClient<IGitHubService, GitHubService>();
 builder.Services.AddCors();
 
 var app = builder.Build();
@@ -33,9 +34,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/repositorios", async (string nome, IRepositorioService service) =>
+app.MapGet("/repositoriosPorNome", async (string nome, IRepositorioService service) =>
 {
-    var result = await service.BuscarRepositoriosComRelevancia(nome);
+    var result = await service.BuscarRepositoriosPorNome(nome);
     return Results.Ok(result);
 });
 

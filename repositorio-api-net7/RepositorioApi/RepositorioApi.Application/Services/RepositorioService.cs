@@ -14,9 +14,9 @@ namespace RepositorioApi.Application.Services
             _gitHubService = gitHubService;
         }
 
-        public async Task<List<RepositorioDTO>> BuscarRepositoriosComRelevancia(string termo)
+        public async Task<List<RepositorioDTO>> BuscarRepositoriosPorNome(string nome)
         {
-            var repositorios = await _gitHubService.BuscarRepositoriosComRelevancia(termo);
+            var repositorios = await _gitHubService.BuscarRepositoriosPorNome(nome);
 
             var resultado = repositorios.Select(r => new RepositorioDTO
             {
