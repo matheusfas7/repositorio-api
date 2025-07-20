@@ -11,17 +11,28 @@ import { RepositorioService } from '../../services/repositorio.service';
   templateUrl: './repos.component.html',
   styleUrls: ['./repos.component.css']
 })
-export class RepositoriosComponent implements OnInit {
-  repos: string = '';
+export class RepositoriosComponent{
+  nome: string = '';
   repositorios: any[] = [];
+  favoritos: Set<number> = new Set(); // Armazena os IDs dos repositórios favoritos
 
   constructor(private repositorioService: RepositorioService) {}
 
-  ngOnInit(): void {}
+  // ngOnInit(): void {}
 
   buscarRepos(): void {
-    if (!this.repos) return;
+    // if (!this.repos) return;
 
-    this.repositorioService.getRepositorios(this.repos);
+    // this.repositorioService.getRepositorios(this.repos);
+
+    this.repositorioService.getRepositorios(this.nome).subscribe({
+      next: (dados) => {
+        console.log(dados)
+        this.repositorios = dados;
+      },
+      error: (err) => {
+        console.error('Erro ao buscar:', err);
+      }
+    });
   }
 }

@@ -14,3 +14,62 @@ input {
 button {
   padding: 8px 16px;
 }
+
+.repos-container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.repo-card {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repo-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.stars {
+  background-color: #e3e3e3;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+}
+
+.repo-description {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #57606a;
+  text-align: left;
+}
+
+.repo-meta {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #6e7781;
+  display: flex;
+  gap: 1rem;
+}
+
