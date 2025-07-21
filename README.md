@@ -2,7 +2,7 @@
 
 Este projeto consiste em uma aplicação que consome a API do GitHub e permite visualizar repositórios públicos, com funcionalidades como favoritar, desfavoritar e buscar repositórios relevantes.
 
-## ✨ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **Angular** (Frontend)
 - **.NET Core / ASP.NET** (Backend)
@@ -12,7 +12,7 @@ Este projeto consiste em uma aplicação que consome a API do GitHub e permite v
 
 ---
 
-## 🧩 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 projeto-abc-fitness/
@@ -26,7 +26,7 @@ projeto-abc-fitness/
 
 ---
 
-## 🚀 Como executar o projeto localmente
+## Como executar o projeto localmente
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina:
 
@@ -48,7 +48,7 @@ Depois de iniciar, o projeto Angular ficará disponível em: http://localhost:42
 
 ---
 
-## 🛠 Inicializando o Backend (ASP.NET Core)
+## Inicializando o Backend (ASP.NET Core)
 
 1. Abra o Visual Studio
 2. Vá em Arquivo > Abrir > Projeto/Solução e selecione o item de inicialização "RepositorioApi.API"
@@ -56,8 +56,3 @@ Depois de iniciar, o projeto Angular ficará disponível em: http://localhost:42
 
 A API estará disponível por padrão em: https://localhost:7132
 (Verifique se a porta pode variar conforme seu perfil de execução)
-
----
-
-## 💼 Autor
-Desenvolvido por Matheus Angeli 🚀
