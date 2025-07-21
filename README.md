@@ -51,7 +51,7 @@ Depois de iniciar, o projeto Angular ficará disponível em: http://localhost:42
 ## 🛠 Inicializando o Backend (ASP.NET Core)
 
 1. Abra o Visual Studio
-2. Vá em Arquivo > Abrir > Projeto/Solução e selecione a pasta repositorio-api-dotnet
+2. Vá em Arquivo > Abrir > Projeto/Solução e selecione o item de inicialização "RepositorioApi.API"
 3. Pressione F5 ou clique em Iniciar Depuração para executar a API
 
 A API estará disponível por padrão em: https://localhost:7132
