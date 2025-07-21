@@ -1,6 +1,6 @@
 # Projeto: Repositório GitHub Viewer
 
-Este consiste em uma aplicação que consome a API do GitHub e permite visualizar repositórios de um determinado usuário, com funcionalidades como favoritar, desfavoritar e ordenar repositórios por relevância.
+Este projeto consiste em uma aplicação que consome a API do GitHub e permite visualizar repositórios públicos, com funcionalidades como favoritar, desfavoritar e buscar repositórios relevantes.
 
 ## ✨ Tecnologias utilizadas
 
