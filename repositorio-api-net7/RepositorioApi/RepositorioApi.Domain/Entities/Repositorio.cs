@@ -18,7 +18,7 @@ namespace RepositorioApi.Domain.Entities
 
         public double CalcularRelevancia()
         {
-            return (Stars * 0.5) + (Forks * 0.3) + (Watchers * 0.2);
+            return (Stars * 3) + (Forks * 2) + (Watchers * 1);
         }
     }
 }

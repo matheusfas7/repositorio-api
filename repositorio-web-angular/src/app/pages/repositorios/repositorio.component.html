@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>🔍 Buscar Repositórios</h2>
+
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="nome" placeholder="Digite o nome do repositório..." />
+    <button (click)="buscarRepositorios()">Buscar</button>
+    <button (click)="buscarRepositoriosPorRelevancia()">Buscar Relevantes</button>
+
+    <!-- <select [(ngModel)]="filtro" (change)="ordenarRepositorios()"> -->
+    <!-- <select>
+      <option value="" disabled selected>Ordenar por</option>
+      <option value="stars">Mais Estrelas</option>
+      <option value="forks">Mais Forks</option>
+      <option value="watchers">Mais Watchers</option>
+    </select>
+  </div> -->
+
+  <div *ngIf="repositorios.length > 0" class="repos-container">
+    <h3>Repositórios encontrados</h3>
+
+    <div *ngFor="let repo of repositorios" class="repo-card">
+      <div class="repo-header">
+        <a [href]="repo.url" target="_blank" class="repo-name">{{ repo.nome }}</a>
+        <button (click)="toggleFavorito(repo.id)" class="favorite-btn">
+          <span *ngIf="isFavorito(repo.id)">⭐</span>
+          <span *ngIf="!isFavorito(repo.id)">☆</span>
+        </button>
+      </div>
+
+      <p class="repo-description">{{ repo.descricao || 'Sem descrição.' }}</p>
+
+      <div class="repo-meta">
+        <span>⭐ {{ repo.stars }}</span>
+        <span>🍴 {{ repo.forks }}</span>
+        <span>👁️ {{ repo.watchers }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+

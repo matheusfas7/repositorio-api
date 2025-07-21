@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { RepositoriosComponent } from "./pages/repositorios/repos.component";
+import { RepositoriosComponent } from "./pages/repositorios/repositorio.component";
 
 @Component({
   selector: 'app-root',

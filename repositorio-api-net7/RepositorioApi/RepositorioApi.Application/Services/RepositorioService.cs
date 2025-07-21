@@ -26,6 +26,25 @@ namespace RepositorioApi.Application.Services
                 Url = r.Url,
                 Stars = r.Stars,
                 Forks = r.Forks,
+                Watchers = r.Watchers
+            })
+            .ToList();
+
+            return resultado;
+        }
+
+        public async Task<List<RepositorioDTO>> BuscarRepositoriosPorRelevancia(string nome)
+        {
+            var repositorios = await _gitHubService.BuscarRepositoriosPorNome(nome);
+
+            var resultado = repositorios.Select(r => new RepositorioDTO
+            {
+                Id = r.Id,
+                Nome = r.Nome,
+                Descricao = r.Descricao,
+                Url = r.Url,
+                Stars = r.Stars,
+                Forks = r.Forks,
                 Watchers = r.Watchers,
                 Relevancia = r.CalcularRelevancia()
             })

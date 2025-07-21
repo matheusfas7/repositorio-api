@@ -12,8 +12,13 @@ export class RepositorioService {
 
   constructor(private http: HttpClient) {}
 
-  getRepositorios(nome: string) : Observable<Repositorio[]>{
+  listartRepositorios(nome: string) : Observable<Repositorio[]>{
     const params = new HttpParams().set('nome', nome);
-    return this.http.get<Repositorio[]>(`${this.apiUrl}/repositoriosPorNome`, { params });
+    return this.http.get<Repositorio[]>(`${this.apiUrl}/repositorios`, { params });
+  }
+
+  listartRepositoriosPorRelevancia(nome: string) : Observable<Repositorio[]>{
+    const params = new HttpParams().set('nome', nome);
+    return this.http.get<Repositorio[]>(`${this.apiUrl}/repositoriosPorRelevancia`, { params });
   }
 }

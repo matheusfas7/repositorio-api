@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { RepositorioService } from '../../services/repositorio.service';
 import { FavoritoService } from '../../services/favorito.service';
 
 @Component({
   selector: 'app-repositorios',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule], 
-  templateUrl: './repos.component.html',
-  styleUrls: ['./repos.component.css']
+  imports: [CommonModule, FormsModule], 
+  templateUrl: './repositorio.component.html',
+  styleUrls: ['./repositorio.component.css']
 })
 export class RepositoriosComponent{
   nome: string = '';
@@ -31,8 +30,20 @@ export class RepositoriosComponent{
     });
   }
 
-  buscarRepos(): void {
-    this.repositorioService.getRepositorios(this.nome).subscribe({
+  buscarRepositorios(): void {
+    this.repositorioService.listartRepositorios(this.nome).subscribe({
+      next: (dados) => {
+        this.repositorios = dados;
+        this.carregarFavoritos();
+      },
+      error: (err) => {
+        console.error('Erro ao buscar repositórios:', err);
+      }
+    });
+  }
+
+  buscarRepositoriosPorRelevancia(): void {
+    this.repositorioService.listartRepositoriosPorRelevancia(this.nome).subscribe({
       next: (dados) => {
         this.repositorios = dados;
         this.carregarFavoritos();

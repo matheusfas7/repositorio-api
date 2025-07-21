@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.application\\services\\favoritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|solutionrelative:repositorioapi.application\\services\\favoritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.application\\dtos\\repositoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|solutionrelative:repositorioapi.application\\dtos\\repositoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1DD84CA0-C74A-4427-9D8F-28828BEDE1B1}|RepositorioApi.Domain\\RepositorioApi.Domain.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.domain\\entities\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DD84CA0-C74A-4427-9D8F-28828BEDE1B1}|RepositorioApi.Domain\\RepositorioApi.Domain.csproj|solutionrelative:repositorioapi.domain\\entities\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.application\\interfaces\\ifavoritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|solutionrelative:repositorioapi.application\\interfaces\\ifavoritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.application\\services\\repositorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,8 +15,24 @@
       "RelativeMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|solutionrelative:repositorioapi.application\\interfaces\\irepositorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.application\\dtos\\repositoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C87A4F1-2947-491E-8720-ED2618F8E652}|RepositorioApi.Application\\RepositorioApi.Application.csproj|solutionrelative:repositorioapi.application\\dtos\\repositoriodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F0B0E45-F826-4284-9201-909987C09F47}|RepositorioApi.Infrastructure\\RepositorioApi.Infrastructure.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.infrastructure\\externalservices\\githubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F0B0E45-F826-4284-9201-909987C09F47}|RepositorioApi.Infrastructure\\RepositorioApi.Infrastructure.csproj|solutionrelative:repositorioapi.infrastructure\\externalservices\\githubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5476384-F54F-4EA4-AA8C-27E7C428D69B}|RepositorioApi.API\\RepositorioApi.API.csproj|solutionrelative:repositorioapi.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DD84CA0-C74A-4427-9D8F-28828BEDE1B1}|RepositorioApi.Domain\\RepositorioApi.Domain.csproj|c:\\users\\mathe\\documents\\projeto-abc-fitness\\repositorio-api-net7\\repositorioapi\\repositorioapi.domain\\interfaces\\igithubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,46 +70,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.API\\Program.cs",
+              "RelativeDocumentMoniker": "RepositorioApi.API\\Program.cs",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.API\\Program.cs",
+              "RelativeToolTip": "RepositorioApi.API\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T19:49:43.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRepositorioService.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
+              "RelativeDocumentMoniker": "RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
+              "RelativeToolTip": "RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T19:54:26.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FavoritoService.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\FavoritoService.cs",
-              "RelativeDocumentMoniker": "RepositorioApi.Application\\Services\\FavoritoService.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\FavoritoService.cs",
-              "RelativeToolTip": "RepositorioApi.Application\\Services\\FavoritoService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwB0AAAAIAAAAAAAAAA==",
+              "Title": "RepositorioService.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\RepositorioService.cs",
+              "RelativeDocumentMoniker": "RepositorioApi.Application\\Services\\RepositorioService.cs",
+              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\RepositorioService.cs",
+              "RelativeToolTip": "RepositorioApi.Application\\Services\\RepositorioService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswDAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:39:08.053Z",
+              "WhenOpened": "2025-07-19T20:08:42.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IFavoritoService.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IFavoritoService.cs",
-              "RelativeDocumentMoniker": "RepositorioApi.Application\\Interfaces\\IFavoritoService.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IFavoritoService.cs",
-              "RelativeToolTip": "RepositorioApi.Application\\Interfaces\\IFavoritoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:37:26.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Domain\\Entities\\Repositorio.cs",
               "RelativeDocumentMoniker": "RepositorioApi.Domain\\Entities\\Repositorio.cs",
               "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Domain\\Entities\\Repositorio.cs",
               "RelativeToolTip": "RepositorioApi.Domain\\Entities\\Repositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T14:23:42.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RepositorioDTO.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\DTOs\\RepositorioDTO.cs",
               "RelativeDocumentMoniker": "RepositorioApi.Application\\DTOs\\RepositorioDTO.cs",
@@ -130,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.API\\appsettings.json",
               "RelativeDocumentMoniker": "RepositorioApi.API\\appsettings.json",
@@ -156,46 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.API\\Program.cs",
-              "RelativeDocumentMoniker": "RepositorioApi.API\\Program.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.API\\Program.cs",
-              "RelativeToolTip": "RepositorioApi.API\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T19:49:43.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RepositorioService.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\RepositorioService.cs",
-              "RelativeDocumentMoniker": "RepositorioApi.Application\\Services\\RepositorioService.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Services\\RepositorioService.cs",
-              "RelativeToolTip": "RepositorioApi.Application\\Services\\RepositorioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T20:08:42.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IRepositorioService.cs",
-              "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
-              "RelativeDocumentMoniker": "RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
-              "ToolTip": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
-              "RelativeToolTip": "RepositorioApi.Application\\Interfaces\\IRepositorioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T19:54:26.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "GitHubService.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Infrastructure\\ExternalServices\\GitHubService.cs",
               "RelativeDocumentMoniker": "RepositorioApi.Infrastructure\\ExternalServices\\GitHubService.cs",
@@ -208,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "IGitHubService.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\Documents\\projeto-abc-fitness\\repositorio-api-net7\\RepositorioApi\\RepositorioApi.Domain\\Interfaces\\IGitHubService.cs",
               "RelativeDocumentMoniker": "RepositorioApi.Domain\\Interfaces\\IGitHubService.cs",

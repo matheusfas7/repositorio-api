@@ -46,9 +46,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/repositoriosPorNome", async (string nome, IRepositorioService service) =>
+app.MapGet("/repositorios", async (string nome, IRepositorioService service) =>
 {
     var result = await service.BuscarRepositoriosPorNome(nome);
+    return Results.Ok(result);
+});
+
+app.MapGet("/repositoriosPorRelevancia", async (string nome, IRepositorioService service) =>
+{
+    var result = await service.BuscarRepositoriosPorRelevancia(nome);
     return Results.Ok(result);
 });
 
