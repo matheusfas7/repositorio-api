@@ -16,7 +16,7 @@ Este projeto consiste em uma aplicação que consome a API do GitHub e permite v
 
 O projeto está dividido em duas partes principais:
 
-**repositorio-api-net7**: onde está a API desenvolvida em ASP.NET Core. Nessa parte ficam os controllers, services, models e demais configurações relacionadas ao backend.
+**repositorio-api-net7**: onde está a API desenvolvida em ASP.NET Core. Nessa parte ficam os controllers, services, models e demais configurações relacionadas ao backend. A organização segue uma estrutura baseada em princípios do Domain-Driven Design (DDD).
 
 **repositorio-web-angular**: onde está o frontend feito em Angular. Aqui estão os componentes, interfaces, serviços e tudo que envolve a interface visual e interação com o usuário.
 
@@ -34,7 +34,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ---
 
-## 🔧 Inicializando o Frontend (Angular)
+## Inicializando o Frontend (Angular)
 
 ```text
 cd repositorio-web-angular
