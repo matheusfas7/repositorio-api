@@ -6,5 +6,4 @@ export interface Repositorio{
     forks: number;
     watchers: number;
     relevancia: number;
-    dataAtualizacao: string;
 }

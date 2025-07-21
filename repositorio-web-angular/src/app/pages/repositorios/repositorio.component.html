@@ -6,19 +6,19 @@
     <button (click)="buscarRepositorios()">Buscar</button>
     <button (click)="buscarRepositoriosPorRelevancia()">Buscar Relevantes</button>
 
-    <!-- <select [(ngModel)]="filtro" (change)="ordenarRepositorios()"> -->
-    <!-- <select>
+    <!-- <select [(ngModel)]="filtro" (change)="ordenarRepositorios()"> 
+    <select>
       <option value="" disabled selected>Ordenar por</option>
       <option value="stars">Mais Estrelas</option>
       <option value="forks">Mais Forks</option>
       <option value="watchers">Mais Watchers</option>
-    </select>
-  </div> -->
+    </select> -->
+  </div>
 
   <div *ngIf="repositorios.length > 0" class="repos-container">
     <h3>Repositórios encontrados</h3>
 
-    <div *ngFor="let repo of repositorios" class="repo-card">
+    <div *ngFor="let repo of repositorios | paginate: { itemsPerPage: 10, currentPage: paginaAtual }" class="repo-card">
       <div class="repo-header">
         <a [href]="repo.url" target="_blank" class="repo-name">{{ repo.nome }}</a>
         <button (click)="toggleFavorito(repo.id)" class="favorite-btn">
@@ -36,5 +36,10 @@
       </div>
     </div>
   </div>
+
+  <!-- <pagination-controls (pageChange)="paginaAtual = $event"></pagination-controls> -->
+
+  <pagination-controls *ngIf="repositorios.length > 0" (pageChange)="paginaAtual = $event"></pagination-controls>
+
 </div>
 

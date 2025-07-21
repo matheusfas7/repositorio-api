@@ -11,6 +11,8 @@ namespace RepositorioApi.Infrastructure.ExternalServices
         public GitHubService(HttpClient httpClient)
         {
             _httpClient = httpClient;
+
+            // Adiciona o User-Agent necessário para requisições à API do GitHub.
             _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("request");
         }
 

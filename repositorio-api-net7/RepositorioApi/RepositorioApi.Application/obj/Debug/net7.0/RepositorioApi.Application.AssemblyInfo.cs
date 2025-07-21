@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepositorioApi.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e0dd3cac88f3f7f3cdf6546d03b024196c5c31d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8893f1bca7df7d9195431ed530f1e898555ff653")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepositorioApi.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositorioApi.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

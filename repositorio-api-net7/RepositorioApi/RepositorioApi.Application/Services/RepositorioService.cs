@@ -1,5 +1,4 @@
 ﻿using RepositorioApi.Application.DTOs;
-using RepositorioApi.Domain.Entities;
 using RepositorioApi.Application.Interfaces;
 using RepositorioApi.Domain.Interfaces;
 

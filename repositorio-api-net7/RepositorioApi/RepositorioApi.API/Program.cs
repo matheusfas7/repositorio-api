@@ -1,13 +1,6 @@
-using Microsoft.Extensions.Caching.Distributed;
 using RepositorioApi.Application.Interfaces;
-using RepositorioApi.Application.Services;
-using RepositorioApi.Domain.Interfaces;
-using RepositorioApi.Domain.Repositories;
-using RepositorioApi.Infrastructure.ExternalServices;
-using StackExchange.Redis;
-using System.Text.Json;
 using RepositorioApi.API.Configurations;
-using Microsoft.Extensions.Caching.Memory;
+using RepositorioApi.Application.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,11 +9,6 @@ builder.Services.AddCustomServices();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddStackExchangeRedisCache(options =>
-{
-    options.Configuration = builder.Configuration.GetValue<string>("CacheSettings:ConnectionString");
-});
-
 builder.Services.AddMemoryCache();
 
 builder.Services.AddSwaggerGen();
@@ -48,12 +36,18 @@ app.UseHttpsRedirection();
 
 app.MapGet("/repositorios", async (string nome, IRepositorioService service) =>
 {
+    if (string.IsNullOrWhiteSpace(nome))
+        return Results.BadRequest("O nome do repositório deve ser informado.");
+
     var result = await service.BuscarRepositoriosPorNome(nome);
     return Results.Ok(result);
 });
 
 app.MapGet("/repositoriosPorRelevancia", async (string nome, IRepositorioService service) =>
 {
+    if (string.IsNullOrWhiteSpace(nome))
+        return Results.BadRequest("O nome do repositório deve ser informado.");
+
     var result = await service.BuscarRepositoriosPorRelevancia(nome);
     return Results.Ok(result);
 });
@@ -61,21 +55,29 @@ app.MapGet("/repositoriosPorRelevancia", async (string nome, IRepositorioService
 app.MapGet("/favoritos", (IFavoritoService favoritoService) =>
 {
     var ids = favoritoService.Listar();
+
+    if (ids == null || !ids.Any())
+        return Results.NoContent();
+
     return Results.Ok(ids);
 });
 
-app.MapPost("/favoritos", (Favorito favorito, IFavoritoService favoritoService) =>
+app.MapPost("/favoritos", (FavoritoDTO favorito, IFavoritoService favoritoService) =>
 {
+    if (favorito == null || favorito.Id <= 0)
+        return Results.BadRequest("ID do repositório inválido.");
+
     favoritoService.Adicionar(favorito.Id);
     return Results.Ok();
 });
 
 app.MapDelete("/favoritos/{id:int}", (int id, IFavoritoService favoritoService) =>
 {
+    if (id <= 0)
+        return Results.BadRequest("ID do repositório inválido.");
+
     favoritoService.Remover(id);
     return Results.Ok();
 });
 
 app.Run();
-
-record Favorito(int Id);
