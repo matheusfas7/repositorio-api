@@ -27,7 +27,7 @@ O projeto está dividido em duas partes principais:
 Antes de começar, você vai precisar ter instalado em sua máquina:
 
 - **Node.js v22.17.0**
-- **Angular**
+- **Angular CLI**
 - **.NET SDK**
 - **Um editor como Visual Studio Code ou outro de sua preferência**
 - **Visual Studio 2022 (com suporte a .NET)**
