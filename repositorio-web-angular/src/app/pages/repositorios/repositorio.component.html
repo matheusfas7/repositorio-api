@@ -5,14 +5,6 @@
     <input type="text" [(ngModel)]="nome" placeholder="Digite o nome do repositório..." />
     <button (click)="buscarRepositorios()">Buscar</button>
     <button (click)="buscarRepositoriosPorRelevancia()">Buscar Relevantes</button>
-
-    <!-- <select [(ngModel)]="filtro" (change)="ordenarRepositorios()"> 
-    <select>
-      <option value="" disabled selected>Ordenar por</option>
-      <option value="stars">Mais Estrelas</option>
-      <option value="forks">Mais Forks</option>
-      <option value="watchers">Mais Watchers</option>
-    </select> -->
   </div>
 
   <div *ngIf="repositorios.length > 0" class="repos-container">
@@ -36,8 +28,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <pagination-controls (pageChange)="paginaAtual = $event"></pagination-controls> -->
 
   <pagination-controls *ngIf="repositorios.length > 0" (pageChange)="paginaAtual = $event"></pagination-controls>
 
