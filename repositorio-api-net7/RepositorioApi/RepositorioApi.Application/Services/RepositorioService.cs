@@ -20,7 +20,9 @@ namespace RepositorioApi.Application.Services
 
             var resultado = repositorios.Select(r => new RepositorioDTO
             {
+                Id = r.Id,
                 Nome = r.Nome,
+                Descricao = r.Descricao,
                 Url = r.Url,
                 Stars = r.Stars,
                 Forks = r.Forks,

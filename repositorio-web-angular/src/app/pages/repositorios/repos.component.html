@@ -10,6 +10,10 @@
   <div *ngFor="let repo of repositorios" class="repo-card">
     <div class="repo-header">
       <a [href]="repo.url" target="_blank" class="repo-name">{{ repo.nome }}</a>
+       <button (click)="toggleFavorito(repo.id)">
+        <span *ngIf="isFavorito(repo.id)">⭐</span>
+        <span *ngIf="!isFavorito(repo.id)">☆</span>
+       </button>
     </div>
     <p class="repo-description">{{ repo.descricao || 'Sem descrição.' }}</p>
     <div class="repo-meta">

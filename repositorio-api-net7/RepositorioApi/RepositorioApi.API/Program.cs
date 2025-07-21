@@ -7,6 +7,7 @@ using RepositorioApi.Infrastructure.ExternalServices;
 using StackExchange.Redis;
 using System.Text.Json;
 using RepositorioApi.API.Configurations;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,10 +21,21 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = builder.Configuration.GetValue<string>("CacheSettings:ConnectionString");
 });
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddSwaggerGen();
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp",
+        policy => policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
 
 var app = builder.Build();
+
+app.UseCors("AllowAngularApp");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -40,88 +52,24 @@ app.MapGet("/repositoriosPorNome", async (string nome, IRepositorioService servi
     return Results.Ok(result);
 });
 
-# region [program cs]
-//app.MapGet("/repos/me", async (IRepositorioService service) =>
-//{
-//    var result = await service.ListarRepositoriosDoUsuario("octocat");
-//    return Results.Ok(result);
-//});
-
-//app.MapPost("/favoritos", async (Favorito favorito, IRepositorioService service) =>
-//{
-//    await service.AdicionarFavorito(favorito);
-//    return Results.Ok();
-//});
-
-//app.MapGet("/favoritos", async (IRepositorioService service) =>
-//{
-//    var result = await service.ListarFavoritos();
-//    return Results.Ok(result);
-//});
-
-#endregion
-
-# region [teste]
-app.MapPost("/favoritos", async (Favorito favorito, IDistributedCache redis) =>
+app.MapGet("/favoritos", (IFavoritoService favoritoService) =>
 {
-    await redis.SetStringAsync(favorito.Url, JsonSerializer.Serialize(favorito));
+    var ids = favoritoService.Listar();
+    return Results.Ok(ids);
+});
+
+app.MapPost("/favoritos", (Favorito favorito, IFavoritoService favoritoService) =>
+{
+    favoritoService.Adicionar(favorito.Id);
     return Results.Ok();
 });
 
-app.MapGet("/favoritos/{url}", async (string url, IDistributedCache redis) =>
+app.MapDelete("/favoritos/{id:int}", (int id, IFavoritoService favoritoService) =>
 {
-    var data = await redis.GetStringAsync(url);
-
-    if (string.IsNullOrEmpty(data)) return null;
-
-    var favorito = JsonSerializer.Deserialize<Favorito>(data, new JsonSerializerOptions
-    {
-        PropertyNameCaseInsensitive = false
-    });
-
-    return favorito;
+    favoritoService.Remover(id);
+    return Results.Ok();
 });
-
-# endregion 
 
 app.Run();
 
-record Favorito(string Nome, string Url);
-
-//interface IRepositorioService
-//{
-//    Task<List<object>> ListarRepositoriosDoUsuario(string usuario);
-//    Task AdicionarFavorito(Favorito favorito);
-//    Task<List<Favorito>> ListarFavoritos();
-//}
-
-//class RepositorioService : IRepositorioService
-//{
-//    private readonly HttpClient _http;
-
-//    public RepositorioService()
-//    {
-//        _http = new HttpClient();
-//        _http.DefaultRequestHeaders.UserAgent.ParseAdd("request");
-//    }
-
-//    public async Task<List<object>> ListarRepositoriosDoUsuario(string usuario)
-//    {
-//        // TODO
-//        // Seu código aqui
-//        throw new NotImplementedException("Implementar lógica para listar repositórios.");
-//    }
-
-//    public async Task AdicionarFavorito(Favorito favorito)
-//    {
-//        // TODO
-//        // Seu código aqui
-//    }
-
-//    public async Task<List<Favorito>> ListarFavoritos()
-//    {
-//        // TODO
-//        // Seu código aqui
-//        throw new NotImplementedException("Implementar lógica para listar favoritos.");
-//    }
-//}
+record Favorito(int Id);

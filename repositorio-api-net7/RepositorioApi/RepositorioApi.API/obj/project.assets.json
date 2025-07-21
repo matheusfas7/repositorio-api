@@ -352,6 +352,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.7",
           "RepositorioApi.Domain": "1.0.0",
           "RepositorioApi.Infrastructure": "1.0.0"
         },

@@ -10,6 +10,7 @@ namespace RepositorioApi.API.Configurations
         public static IServiceCollection AddCustomServices(this IServiceCollection services)
         {
             services.AddScoped<IRepositorioService, RepositorioService>();
+            services.AddScoped<IFavoritoService, FavoritoService>();
             services.AddHttpClient<IGitHubService, GitHubService>();
 
             return services;

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RepositorioService } from '../../services/repositorio.service';
+import { FavoritoService } from '../../services/favorito.service';
 
 @Component({
   selector: 'app-repositorios',
@@ -14,25 +15,49 @@ import { RepositorioService } from '../../services/repositorio.service';
 export class RepositoriosComponent{
   nome: string = '';
   repositorios: any[] = [];
-  favoritos: Set<number> = new Set(); // Armazena os IDs dos repositórios favoritos
+  favoritos: Set<number> = new Set();
 
-  constructor(private repositorioService: RepositorioService) {}
+  constructor(
+    private repositorioService: RepositorioService,
+    private favoritoService: FavoritoService
+  ) {}
 
-  // ngOnInit(): void {}
+  carregarFavoritos(): void {
+    this.favoritoService.listarFavoritos().subscribe({
+      next: (data: number[]) => {
+        this.favoritos = new Set(data);
+      },
+      error: err => console.error('Erro ao carregar favoritos:', err)
+    });
+  }
 
   buscarRepos(): void {
-    // if (!this.repos) return;
-
-    // this.repositorioService.getRepositorios(this.repos);
-
     this.repositorioService.getRepositorios(this.nome).subscribe({
       next: (dados) => {
-        console.log(dados)
         this.repositorios = dados;
+        this.carregarFavoritos();
       },
       error: (err) => {
-        console.error('Erro ao buscar:', err);
+        console.error('Erro ao buscar repositórios:', err);
       }
     });
+  }
+
+  toggleFavorito(id: number): void {
+    if (this.favoritos.has(id)) {
+      this.favoritoService.removerFavorito(id).subscribe({
+        next: () => this.carregarFavoritos(),
+        error: err => console.error('Erro ao remover favorito:', err)
+      });
+    } else {
+      this.favoritoService.adicionarFavorito(id).subscribe({
+        next: () => this.carregarFavoritos(),
+        error: err => console.error('Erro ao adicionar favorito:', err)
+      });
+    }
+  }
+
+  isFavorito(id: number): boolean {
+    return this.favoritos.has(id);
   }
 }

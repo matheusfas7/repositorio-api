@@ -31,7 +31,9 @@ namespace RepositorioApi.Infrastructure.ExternalServices
             {
                 repositorios.Add(new Repositorio
                 {
+                    Id = item.GetProperty("id").GetInt32(),
                     Nome = item.GetProperty("name").GetString(),
+                    Descricao = item.GetProperty("description").GetString(),
                     Url = item.GetProperty("html_url").GetString(),
                     Stars = item.GetProperty("stargazers_count").GetInt32(),
                     Forks = item.GetProperty("forks_count").GetInt32(),
