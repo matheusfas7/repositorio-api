@@ -14,15 +14,11 @@ Este projeto consiste em uma aplicação que consome a API do GitHub e permite v
 
 ## Estrutura do Projeto
 
-```text
-projeto-abc-fitness/
-│
-├── repositorio-api-dotnet/    # Projeto backend (ASP.NET Core)
-│   └── ...                    # Controllers, Services, Models, etc.
-│
-└── repositorio-web-angular/   # Projeto frontend (Angular)
-    └── ...                    # Components, Services, Interfaces, etc.
-```
+O projeto está dividido em duas partes principais:
+
+**repositorio-api-net7**: onde está a API desenvolvida em ASP.NET Core. Nessa parte ficam os controllers, services, models e demais configurações relacionadas ao backend.
+
+**repositorio-web-angular**: onde está o frontend feito em Angular. Aqui estão os componentes, interfaces, serviços e tudo que envolve a interface visual e interação com o usuário.
 
 ---
 
@@ -30,8 +26,8 @@ projeto-abc-fitness/
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina:
 
-- **Node.js (versão compatível com Angular)**
-- **Angular CLI**
+- **Node.js v22.17.0**
+- **Angular**
 - **.NET SDK**
 - **Um editor como Visual Studio Code ou outro de sua preferência**
 - **Visual Studio 2022 (com suporte a .NET)**
@@ -42,6 +38,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ```text
 cd repositorio-web-angular
+npm install
 npm start
 ```
 Depois de iniciar, o projeto Angular ficará disponível em: http://localhost:4200
